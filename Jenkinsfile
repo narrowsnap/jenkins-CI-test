@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+        image 'node:carbon'
+    }
+  }
   stages {
     stage('Initialize') {
       steps {
