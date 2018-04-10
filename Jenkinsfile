@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Initialize') {
       steps {
-        sh 'npm install'
+        echo 'jenkins test'
       }
     }
   }
